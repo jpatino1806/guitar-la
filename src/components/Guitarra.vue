@@ -27,11 +27,8 @@ defineEmits(['agregar-carrito'])
             <p>{{ numero }}</p>
             <p>{{ guitarraProp.descripcion }}</p>
             <p class="fw-black text-primary fs-3">${{ guitarraProp.precio }}</p>
-            <button type="button" class="btn btn-dark w-100 " @click="$emit('agregar-carrito')">Agregar al
+            <button type="button" class="btn btn-dark w-100 " @click="$emit('agregar-carrito', guitarraProp)">Agregar al
                 Carrito</button>
         </div>
     </div><!-- FIN GUITARRA -->
 </template>
-
-
-<style lang="scss" scoped></style>
